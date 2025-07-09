@@ -17,7 +17,7 @@ function Header() {
             </div>
 
             <div>
-              <img src={openToWork} />
+              <img class="circle" src={openToWork} />
             </div>
           </div>
 

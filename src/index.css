@@ -13,3 +13,14 @@
 header {
   unicode-bidi: isolate;
 }
+
+.circle {
+  animation: spin 15s linear infinite; /* spin 1s linear infinite */
+
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}
+
