@@ -1,9 +1,7 @@
-import { useState } from "react";
+import React from "react";
 import CustomCursor from "./components/CustomCursor";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
       <div className="flex w-[100%] min-h-[100vh] p-6 sticky">
