@@ -1,6 +1,7 @@
 import React from "react";
 import openToWork from "../assets/img/openToWork.svg";
 
+
 function Header() {
   return (
     <header className="h-[200vh] mb-[-100vh] relative">

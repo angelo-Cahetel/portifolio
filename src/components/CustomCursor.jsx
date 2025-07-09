@@ -6,7 +6,7 @@ const CustomCursor = () => {
 
     useEffect(() => {
         const handleMouseMove = (e) => {
-            setPosition({ x: e.clientX, y: e.clientY });
+            setPosition({ x: e.pageX, y: e.pageY });
         };
         window.addEventListener("mousemove", handleMouseMove);
         return () => window.removeEventListener("mousemove", handleMouseMove);
@@ -17,14 +17,14 @@ const CustomCursor = () => {
             <img 
             src={cursor} 
             alt="Imagem que segue o cursor" 
-            className="pointer-events-none fixed z-50"
+            className="pointer-events-none fixed z-50 rotate-20"
             style={{
                 left: position.x,
                 top: position.y,
                 transform: "translate(-50%, -50%)",
             }}
-            width={80}
-            height={80}
+            width={40}
+            height={40}
             />
         </div>
     );
