@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+
+:root {
+  font-family: 'Satoshi', sans-serif;
+  
+  background-color: #111;
+  
+
+  box-sizing: border-box;
+}
+
+header {
+  unicode-bidi: isolate;
+}
