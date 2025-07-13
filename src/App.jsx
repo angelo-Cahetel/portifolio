@@ -7,7 +7,7 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
 let smoother = ScrollSmoother.create({
-    smooth: 2,
+    smooth: 1,
     effects: true,
     normalizeScroll: true
 });
