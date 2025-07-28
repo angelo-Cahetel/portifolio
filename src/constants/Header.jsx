@@ -24,9 +24,9 @@ function Header() {
 
           <div className="flex justify-between items-end">
           <div className="flex gap-7">
-            <ul className="text-[18px] text-[#0000ff] hover:px-[5px] hover:bg-[#0000ff] hover:rounded-[20px] hover:text-white"><a className="cursor-none" href="App.jsx">About</a></ul>
-            <ul className="text-[18px] text-[#0000ff] hover:px-[5px] hover:bg-[#0000ff] hover:rounded-[20px] hover:text-white"><a className="cursor-none" href="">Projects</a></ul>
-            <ul className="text-[18px] text-[#0000ff] hover:px-[5px] hover:bg-[#0000ff] hover:rounded-[20px] hover:text-white"><a className="cursor-none" href="">Contact</a></ul>
+            <ul className="text-[18px] text-[#0000ff] hover:px-[5px] hover:bg-[#0000ff] hover:rounded-[20px] hover:text-white"><a className="cursor-pointer" href="App.jsx">About</a></ul>
+            <ul className="text-[18px] text-[#0000ff] hover:px-[5px] hover:bg-[#0000ff] hover:rounded-[20px] hover:text-white"><a className="cursor-pointer" href="">Projects</a></ul>
+            <ul className="text-[18px] text-[#0000ff] hover:px-[5px] hover:bg-[#0000ff] hover:rounded-[20px] hover:text-white"><a className="cursor-pointer" href="">Contact</a></ul>
           </div>
 
           <div>

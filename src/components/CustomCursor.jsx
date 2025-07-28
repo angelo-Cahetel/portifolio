@@ -17,14 +17,14 @@ const CustomCursor = () => {
             <img 
             src={cursor} 
             alt="Imagem que segue o cursor" 
-            className="pointer-events-none fixed z-50 rotate-20"
+            className="pointer-events-none fixed z-50"
             style={{
                 left: position.x,
                 top: position.y,
-                transform: "translate(-50%, -50%)",
+                // transform: "translate(50%, 50%)",
             }}
-            width={40}
-            height={40}
+            width={80}
+            height={80}
             />
         </div>
     );

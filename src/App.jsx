@@ -23,7 +23,7 @@ function App() {
             </div>
 
             <div className="flex justify-end">
-              <h2 className="text-[#0000FF] text-5xl">About me</h2>
+              <h2 className="text-[#0000FF] text-5xl font-medium">About me</h2>
             </div>
 
             <div className="flex justify-end">
@@ -41,7 +41,7 @@ function App() {
 
             <div className="flex justify-between gap-28">
               <div>
-                <h2 className="text-[#0000FF] text-5xl">Skills</h2>
+                <h2 className="text-[#0000FF] text-5xl font-medium">Skills</h2>
                 <div className="pt-[10px]">
                   <p className="">
                     Frontend: React.js, JavaScript, TailwindCSS, HTML, CSS
@@ -52,7 +52,7 @@ function App() {
                   <p className="">Outros: Git, GitHub, pacote office</p>
                 </div>
               </div>
-              <div className="w-[200px] h-[180px] relative top-20 right-40 rotate-[227.58deg] bg-[#0000ff] blur-[100px]" />
+              {/* <div className="w-[200px] h-[180px] relative top-20 right-40 rotate-[227.58deg] bg-[#0000ff] blur-[100px]" /> */}
             </div>
           </div>
         </div>
