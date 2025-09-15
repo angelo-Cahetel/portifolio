@@ -23,8 +23,8 @@ const CustomCursor = () => {
                 top: position.y,
                 // transform: "translate(50%, 50%)",
             }}
-            width={80}
-            height={80}
+            width={100}
+            height={100}
             />
         </div>
     );
