@@ -7,7 +7,7 @@ function Projects() {
     <section className="flex w-[100%] min-h-[100vh] p-6 sticky">
       <div className="bg-white rounded-2xl flex flex-col w-[100%] p-20">
         <div className="justify-center">
-          <h1 className="text-[#0000FF] text-end text-8xl font-medium">
+          <h1 className="text-[#0000FF] text-end text-8xl font-medium font-instrument italic">
             Projects
           </h1>
         </div>
@@ -20,8 +20,8 @@ function Projects() {
               alt=""
             />
             <div>
-              <h2 className="pl-5 text-4xl text-[#0000ff]">peace</h2>
-              <p className="p-5">
+              <h2 className="pl-5 text-4xl text-[#0000ff] font-satoshi">peace</h2>
+              <p className="p-5 font-satoshi">
                 Peace é um aplicativo para iOS que desenvolvi com o objetivo de
                 ajudar as pessoas a se organizarem melhor, gerenciarem suas
                 tarefas e acompanharem sua rotina de forma prática.
@@ -37,8 +37,8 @@ function Projects() {
               alt=""
             />
             <div>
-              <h2 className="pl-5 text-4xl text-[#0000ff]">poliveso</h2>
-              <p className="p-5">
+              <h2 className="pl-5 text-4xl text-[#0000ff] font-satoshi">poliveso</h2>
+              <p className="p-5 font-satoshi">
                 A Poliverso é uma agencia do audiovisual que que conecta
                 talentos para produzir conteúdos de alta qualidade.
               </p>
@@ -53,8 +53,8 @@ function Projects() {
               alt=""
             />
             <div>
-              <h2 className="pl-5 text-4xl text-[#0000ff]">Poliveso</h2>
-              <p className="p-5">
+              <h2 className="pl-5 text-4xl text-[#0000ff] font-satoshi">Poliveso</h2>
+              <p className="p-5 font-satoshi">
                 A Poliverso é uma agencia do audiovisual que que conecta
                 talentos para produzir conteúdos de alta qualidade.
               </p>
