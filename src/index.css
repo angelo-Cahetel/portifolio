@@ -9,7 +9,7 @@
   background-color: #111;
   box-sizing: border-box;
 
-  /* cursor: none; */
+  cursor: none;
 }
 ::selection {
   background-color: #0000ff;
