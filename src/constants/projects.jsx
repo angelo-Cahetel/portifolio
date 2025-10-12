@@ -20,12 +20,12 @@ function Projects() {
               alt=""
             />
             <div>
-              <h2 className="pl-5 text-4xl text-[#0000ff] font-satoshi">peace</h2>
-              <p className="p-5 font-satoshi">
-                Peace é um aplicativo para iOS que desenvolvi com o objetivo de
-                ajudar as pessoas a se organizarem melhor, gerenciarem suas
-                tarefas e acompanharem sua rotina de forma prática.
-              </p>
+              <h2 className="pl-5 text-4xl text-[#0000ff] font-instrument italic">
+                peace
+              </h2>
+              <div className="mx-4 my-1 rounded-[5px] w-min px-2.5 bg-[#0000ff]">
+                <p className="font-satoshi text-white">#Mobile</p>
+              </div>
             </div>
           </div>
 
@@ -37,11 +37,12 @@ function Projects() {
               alt=""
             />
             <div>
-              <h2 className="pl-5 text-4xl text-[#0000ff] font-satoshi">poliveso</h2>
-              <p className="p-5 font-satoshi">
-                A Poliverso é uma agencia do audiovisual que que conecta
-                talentos para produzir conteúdos de alta qualidade.
-              </p>
+              <h2 className="pl-5 text-4xl text-[#0000ff] font-instrument italic">
+                poliverso
+              </h2>
+              <div className="mx-4 my-1 rounded-[5px] w-min px-2.5 bg-[#0000ff]">
+                <p className="font-satoshi text-white">#Web</p>
+              </div>
             </div>
           </div>
 
@@ -53,11 +54,12 @@ function Projects() {
               alt=""
             />
             <div>
-              <h2 className="pl-5 text-4xl text-[#0000ff] font-satoshi">Poliveso</h2>
-              <p className="p-5 font-satoshi">
-                A Poliverso é uma agencia do audiovisual que que conecta
-                talentos para produzir conteúdos de alta qualidade.
-              </p>
+              <h2 className="pl-5 text-4xl text-[#0000ff] font-instrument italic">
+                estante.me
+              </h2>
+              <div className="mx-4 my-1 rounded-[5px] w-min px-2.5 bg-[#0000ff]">
+                <p className="font-satoshi text-white">#Web</p>
+              </div>
             </div>
           </div>
         </div>
