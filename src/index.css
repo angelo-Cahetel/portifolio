@@ -8,7 +8,6 @@
 :root {
   background-color: #111;
   box-sizing: border-box;
-
   cursor: none;
 }
 ::selection {
@@ -28,4 +27,3 @@ header {
     }
   }
 }
-
