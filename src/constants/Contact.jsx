@@ -3,6 +3,10 @@ import GitHub from "../assets/img/GitHub.svg";
 import LinkedIn from "../assets/img/LinkedIn.svg";
 import Instagram from "../assets/img/Instagram.svg";
 
+const handleSendEmail = () => {
+  window.location.href = "mailto:angelo030825@gmail.com?subject=angelo.dev&body=Gostaria de entrar em contato com você!"
+};
+
 function Contact() {
   return (
     <>
@@ -15,7 +19,7 @@ function Contact() {
                   <h1 className="text-[#0000ff] text-9xl font-medium font-instrument italic">
                     Let's talk!
                   </h1>
-                  <button className="px-7 py-2.5 bg-[#0000ff] hover:text-[#0000ff] hover:bg-white hover:outline-2 hover:outline-[#0000ff] rounded-[20px] text-white text-3xl cursor-none font-satoshi">
+                  <button onClick={handleSendEmail} className="px-7 py-2.5 bg-[#0000ff] hover:text-[#0000ff] hover:bg-white hover:outline-2 hover:outline-[#0000ff] rounded-[20px] text-white text-3xl cursor-none font-satoshi">
                     Get in touch
                   </button>
                 </div>
