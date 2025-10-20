@@ -8,7 +8,13 @@
 :root {
   background-color: #111;
   box-sizing: border-box;
-  cursor: none;
+}
+
+/* Esconde o cursor apenas em desktops (dispositivos com mouse) */
+@media (hover: hover) and (pointer: fine) {
+  :root {
+    cursor: none;
+  }
 }
 ::selection {
   background-color: #0000ff;
