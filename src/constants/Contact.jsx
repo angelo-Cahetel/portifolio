@@ -11,8 +11,8 @@ function Contact() {
   return (
     <>
       <footer>
-        <div className="flex w-[100%] min-h-[100vh] p-6 sticky">
-          <div className="flex justify-center bg-white rounded-2xl w-[100%] p-20">
+        <div className="flex w-[full] min-h-screen p-6 sticky">
+          <div className="flex justify-center bg-white rounded-2xl w-full p-20">
             <div className="flex flex-col justify-center">
               <div className="">
                 <div className="flex flex-col justify-center items-center m-[200px] gap-2.5">
