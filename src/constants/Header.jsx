@@ -6,8 +6,8 @@ import "../index.css";
 function Header() {
   return (
     <header className="h-[200vh] mb-[-100vh] relative">
-      <div className="flex w-[100%] min-h-[100vh] p-6 sticky">
-        <div className="bg-white rounded-2xl flex flex-col justify-between w-[100%] px-8 py-6 lg:p-20">
+      <div className="flex w-full min-h-screen p-6 sticky">
+        <div className="bg-white rounded-2xl flex flex-col justify-between w-full px-8 py-6 lg:p-20">
           <div className="flex justify-between gap-2">
             <div>
               <h1 className="text-[#0000FF] text-4xl lg:text-8xl sm:text-4xl md:text-6xl uppercase font-instrument italic font-medium">

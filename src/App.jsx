@@ -1,22 +1,11 @@
 import React from "react";
 import CustomCursor from "./components/CustomCursor";
-import gsap from "gsap";
-import ScrollSmoother from "gsap/ScrollSmoother";
-import ScrollTrigger from "gsap/ScrollTrigger";
-
-gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
-
-let smoother = ScrollSmoother.create({
-    smooth: 1,
-    effects: true,
-    normalizeScroll: true
-});
 
 function App() {
   return (
     <>
-      <div id="smooth-wrapper" className="flex w-[100%] min-h-[100vh] p-6 sticky">
-        <div id="smooth-content" className="bg-white rounded-2xl flex flex-col w-[100%] p-20">
+      <div id="smooth-wrapper" className="flex w-full min-h-screen p-6 sticky">
+        <div id="smooth-content" className="bg-white rounded-2xl flex flex-col w-full p-20">
           <div className="justify-end">
             <div>
               <h1 className="text-[#0000FF] text-4xl lg:text-8xl font-instrument italic font-medium">Hi folks!</h1>
