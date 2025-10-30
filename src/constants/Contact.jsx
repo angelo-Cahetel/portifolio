@@ -19,19 +19,19 @@ function Contact() {
                   <h1 className="text-[#0000ff] text-9xl font-medium font-instrument italic">
                     Let's talk!
                   </h1>
-                  <button onClick={handleSendEmail} className="px-7 py-2.5 bg-[#0000ff] hover:text-[#0000ff] hover:bg-white hover:outline-2 hover:outline-[#0000ff] rounded-[20px] text-white text-3xl cursor-none font-satoshi">
+                  <button onClick={handleSendEmail} className="px-7 py-2.5 bg-[#0000ff] hover:text-[#0000ff] hover:bg-white hover:outline-2 hover:outline-[#0000ff] rounded-[20px] text-white text-3xl cursor-pointer font-satoshi">
                     Get in touch
                   </button>
                 </div>
               </div>
               <div className="flex justify-center items-center gap-4">
-                <a className="cursor-none" href="https://github.com/angelo-Cahetel" target="_blank">
+                <a className="cursor-pointer" href="https://github.com/angelo-Cahetel" target="_blank">
                   <img className="hover:w-7 hover:h-7" src={GitHub} alt="" />
                 </a>
-                <a className="cursor-none" href="https://www.linkedin.com/in/angelocahetel/" target="_blank">
+                <a className="cursor-pointer" href="https://www.linkedin.com/in/angelocahetel/" target="_blank">
                   <img className="hover:w-7 hover:h-7" src={LinkedIn} alt="" />
                 </a>
-                <a className="cursor-none" href="https://www.instagram.com/angelo_m_souza/" target="_blank">
+                <a className="cursor-pointer" href="https://www.instagram.com/angelo_m_souza/" target="_blank">
                   <img className="hover:w-7 hover:h-7" src={Instagram} alt="" />
                 </a>
               </div>

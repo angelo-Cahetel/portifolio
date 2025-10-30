@@ -2,7 +2,6 @@ import React from "react";
 import openToWork from "../assets/img/openToWork.svg";
 import "../index.css";
 
-
 function Header() {
   return (
     <header className="h-[200vh] mb-[-100vh] relative">
@@ -25,9 +24,9 @@ function Header() {
 
           <div className="flex justify-between items-end">
           <div className="lg:flex gap-7">
-            <ul className="text-[16px] lg:text-2xl text-[#0000ff] hover:px-[5px] hover:bg-[#0000ff] hover:rounded-[20px] hover:text-white"><a className="cursor-none font-satoshi" href="App.jsx">About</a></ul>
-            <ul className="text-[16px] lg:text-2xl text-[#0000ff] hover:px-[5px] hover:bg-[#0000ff] hover:rounded-[20px] hover:text-white"><a className="cursor-none font-satoshi" href="">Projects</a></ul>
-            <ul className="text-[16px] lg:text-2xl text-[#0000ff] hover:px-[5px] hover:bg-[#0000ff] hover:rounded-[20px] hover:text-white"><a className="cursor-none font-satoshi" href="">Contact</a></ul>
+            <ul className="text-[16px] lg:text-2xl text-[#0000ff] hover:px-[5px] hover:bg-[#0000ff] hover:rounded-[20px] hover:text-white"><a className="cursor-pointer font-satoshi" href="App.jsx">About</a></ul>
+            <ul className="text-[16px] lg:text-2xl text-[#0000ff] hover:px-[5px] hover:bg-[#0000ff] hover:rounded-[20px] hover:text-white"><a className="cursor-pointer font-satoshi" href="">Projects</a></ul>
+            <ul className="text-[16px] lg:text-2xl text-[#0000ff] hover:px-[5px] hover:bg-[#0000ff] hover:rounded-[20px] hover:text-white"><a className="cursor-pointer font-satoshi" href="">Contact</a></ul>
           </div>
 
           <div>
