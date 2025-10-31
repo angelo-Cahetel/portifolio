@@ -1,10 +1,10 @@
 import React from "react";
-
+import "../index.css";
 
 function Hero() {
   return (
     <>
-      <div id="smooth-wrapper" className="flex w-full min-h-screen p-6 sticky">
+      <div id="about" className="flex w-full min-h-screen p-6 sticky">
         <div
           id="smooth-content"
           className="bg-white rounded-2xl flex flex-col w-full p-20"

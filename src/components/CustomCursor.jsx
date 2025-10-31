@@ -19,7 +19,7 @@ const CustomCursor = () => {
     window.addEventListener("resize", checkMobile);
 
     const handleMouseMove = (e) => {
-      setPosition({ x: e.pageX, y: e.pageY });
+      setPosition({ x: e.clientX, y: e.clientY });
     };
     window.addEventListener("mousemove", handleMouseMove);
 
@@ -35,20 +35,23 @@ const CustomCursor = () => {
   }
 
   return (
-    <img
-      src={cursor}
-      alt="Imagem que segue o cursor"
+    <div
+      className="fixed pointer-events-none"
       style={{
-        position: "fixed",
         left: position.x,
         top: position.y,
         transform: "translate(-50%, -50%)",
-        pointerEvents: "none",
-        zIndex: 9999,
         width: 80,
         height: 80,
+        zIndex: 99999,
       }}
-    />
+    >
+      <img
+        src={cursor}
+        alt="Imagem que segue o cursor"
+        className="w-full h-full"
+      />
+    </div>
   );
 };
 

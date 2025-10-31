@@ -23,18 +23,33 @@ function Header() {
           </div>
 
           <div className="flex justify-between items-end">
-          <div className="lg:flex gap-7">
-            <ul className="text-[16px] lg:text-2xl text-[#0000ff]"><a className="cursor-pointer font-satoshi" href="App.jsx">About</a></ul>
-            <ul className="text-[16px] lg:text-2xl text-[#0000ff]"><a className="cursor-pointer font-satoshi" href="">Projects</a></ul>
-            <ul className="text-[16px] lg:text-2xl text-[#0000ff]"><a className="cursor-pointer font-satoshi" href="">Contact</a></ul>
-          </div>
+            <div className="lg:flex gap-7">
+              <ul className="text-[16px] lg:text-2xl text-[#0000ff] hover:underline transition-all">
+                <a className="cursor-pointer font-satoshi" href="#about">
+                  About
+                </a>
+              </ul>
+              <ul className="text-[16px] lg:text-2xl text-[#0000ff] hover:underline transition-all">
+                <a className="cursor-pointer font-satoshi" href="#projects">
+                  Projects
+                </a>
+              </ul>
+              <ul className="text-[16px] lg:text-2xl text-[#0000ff] hover:underline transition-all">
+                <a className="cursor-pointer font-satoshi" href="#contact">
+                  Contact
+                </a>
+              </ul>
+            </div>
 
-          <div>
-            <h1 className="text-[#0000FF] text-4xl lg:text-8xl uppercase font-medium font-instrument italic">Angelo</h1>
-            <h1 className="text-[#0000FF] text-4xl lg:text-8xl uppercase font-medium font-instrument italic">Mendes</h1>
+            <div>
+              <h1 className="text-[#0000FF] text-4xl lg:text-8xl uppercase font-medium font-instrument italic">
+                Angelo
+              </h1>
+              <h1 className="text-[#0000FF] text-4xl lg:text-8xl uppercase font-medium font-instrument italic">
+                Mendes
+              </h1>
+            </div>
           </div>
-          </div>
-
         </div>
       </div>
     </header>

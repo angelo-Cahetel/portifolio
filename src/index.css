@@ -6,16 +6,17 @@
 }
 
 :root {
-  background-color: #040304FF;
+  background-color: #040304ff;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 /* Esconde o cursor apenas em desktops (dispositivos com mouse) */
-/* @media (hover: hover) and (pointer: fine) {
-  :root {
-    cursor: none;
+@media (hover: hover) and (pointer: fine) {
+  * {
+    cursor: none !important;
   }
-} */
+}
 ::selection {
   background-color: #0000ff;
   color: #fff;
@@ -25,10 +26,10 @@ header {
 }
 
 @keyframes spin {
-    to {
-      transform: rotate(360deg);
-    }
+  to {
+    transform: rotate(360deg);
   }
+}
 
 .circle {
   animation: spin 15s linear infinite; /* spin 1s linear infinite */
