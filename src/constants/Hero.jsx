@@ -24,14 +24,7 @@ function Hero() {
 
             <div className="flex justify-end">
               <p className="w-full lg:w-[549px] text-end pt-2.5 font-satoshi">
-                Sou estudante de Análise e Desenvolvimento de Sistemas, com
-                especialização em desenvolvimento Web e Mobile. Possuo
-                experiência prática em projetos freelance, onde desenvolvi
-                soluções personalizadas para diferentes clientes. Atualmente,
-                estou me aprofundando em Swift com o objetivo de atuar como
-                desenvolvedor iOS. Estou em busca de oportunidades para aplicar
-                e expandir minhas habilidades técnicas, contribuindo de forma
-                significativa para o crescimento da equipe e da empresa.
+                I am a skilled software developer, my specialty lies in architecting and developing robust solutions. With strong expertise across both the Fullstack universe and the dynamic iOS ecosystem. With rapid learning capabilities and a highly collaborative approach, I delve deep into client needs to deliver products that not only function flawlessly but also delight users and generate tangible value. If you're seeking performance, scalability, and an impeccable user experience, let's build the future of technology together!
               </p>
             </div>
 

@@ -31,9 +31,9 @@ function Projects() {
                 <p className="font-satoshi text-white text-sm">#Mobile</p>
               </div>
               <p className="font-satoshi text-sm md:text-base">
-                Peace é um aplicativo para iOS que desenvolvi com o objetivo de
-                ajudar as pessoas a se organizarem melhor, gerenciarem suas
-                tarefas e acompanharem sua rotina de forma prática.
+                Peace is an iOS app that was developed with the goal of helping
+                people get better organized, managing their tasks and tracking
+                their routine in a practical way.
               </p>
             </div>
           </div>
@@ -53,8 +53,8 @@ function Projects() {
                 <p className="font-satoshi text-white text-sm">#Web</p>
               </div>
               <p className="font-satoshi text-sm md:text-base">
-                A Poliverso é uma agencia do audiovisual que que conecta
-                talentos para produzir conteúdos de alta qualidade.
+                Poliverso is an audiovisual agency that connects talents to
+                produce high-quality content.
               </p>
             </div>
           </div>
@@ -74,9 +74,9 @@ function Projects() {
                 <p className="font-satoshi text-white text-sm">#FullStack</p>
               </div>
               <p className="font-satoshi text-sm md:text-base">
-                O clone do tabnews é um projeto que foi desenvolvido no
-                curso.dev. Nele aprendi a criar testes automatizados,
-                autenticação de usuários e deploy.
+                The tabnews clone is a project that was developed in the
+                curso.dev course. In it, I learned how to create automated
+                tests, user authentication, and deployment.
               </p>
             </div>
           </div>
