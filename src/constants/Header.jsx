@@ -1,8 +1,34 @@
 import React from "react";
 import openToWork from "../assets/img/openToWork.svg";
 import "../index.css";
+import gsap from "gsap";
+import { SplitText } from "gsap/SplitText";
+import { useEffect } from "react";
 
 function Header() {
+  gsap.registerPlugin(SplitText);
+
+  let split = SplitText.create(".text", {
+    type: "words, lines",
+  });
+
+  useEffect(() => {
+    let split = SplitText.create(".text", {
+      type: "words, lines",
+    });
+
+    gsap.from(split.lines, {
+      duration: 0.8,
+      y: 100,
+      autoAlpha: 0,
+      stagger: 0.05,
+    });
+
+    return () => {
+      split.revert();
+    };
+  }, []);
+
   return (
     <header className="h-[200vh] mb-[-100vh] relative">
       <div className="flex w-full min-h-screen p-6 sticky">
@@ -10,10 +36,10 @@ function Header() {
           <div className="flex justify-between gap-2">
             <div>
               <h1 className="text-[#0000FF] text-4xl lg:text-8xl sm:text-4xl md:text-6xl uppercase font-instrument italic font-medium">
-                software
+                <span class="text">software</span>
               </h1>
               <h1 className="text-[#0000FF] text-4xl lg:text-8xl sm:text-4xl md:text-6xl uppercase font-instrument italic font-medium">
-                developer
+                <span class="text">developer</span>
               </h1>
             </div>
 
@@ -26,27 +52,27 @@ function Header() {
             <div className="lg:flex gap-7">
               <ul className="text-[16px] lg:text-2xl text-[#0000ff] hover:underline transition-all">
                 <a className="cursor-pointer font-satoshi" href="#about">
-                  About
+                  <span class="text">About</span>
                 </a>
               </ul>
               <ul className="text-[16px] lg:text-2xl text-[#0000ff] hover:underline transition-all">
                 <a className="cursor-pointer font-satoshi" href="#projects">
-                  Projects
+                  <span class="text">Projects</span>
                 </a>
               </ul>
               <ul className="text-[16px] lg:text-2xl text-[#0000ff] hover:underline transition-all">
                 <a className="cursor-pointer font-satoshi" href="#contact">
-                  Contact
+                  <span class="text">Contact</span>
                 </a>
               </ul>
             </div>
 
             <div>
               <h1 className="text-[#0000FF] text-4xl lg:text-8xl uppercase font-medium font-instrument italic">
-                Angelo
+                <span class="text">Angelo</span>
               </h1>
               <h1 className="text-[#0000FF] text-4xl lg:text-8xl uppercase font-medium font-instrument italic">
-                Mendes
+                <span class="text">Mendes</span>
               </h1>
             </div>
           </div>
