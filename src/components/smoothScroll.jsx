@@ -5,11 +5,11 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
 function smoother() {
-    let smoother = ScrollSmoother.create({
+  let smoother = ScrollSmoother.create({
     smooth: 1,
     effects: true,
-    normalizeScroll: true
-});
+    normalizeScroll: true,
+  });
 }
 
 export default smoother;
