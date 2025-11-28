@@ -10,8 +10,8 @@ const CustomCursor = () => {
     const checkMobile = () => {
       setIsMobile(
         /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
-          navigator.userAgent
-        ) || window.innerWidth < 768
+          navigator.userAgent,
+        ) || window.innerWidth < 768,
       );
     };
 
