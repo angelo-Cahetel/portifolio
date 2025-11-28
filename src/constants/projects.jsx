@@ -18,7 +18,7 @@ function Projects() {
         </div>
         <div className="flex flex-col lg:flex-row gap-6 md:gap-8 lg:gap-[45px]">
           {/* peace */}
-          <div className="w-full lg:w-91 h-auto lg:h-[480px] mt-8 bg-white rounded-[20px] shadow-[12px_12px_12px_0px_rgba(0,0,0,0.25)] p-5">
+          <div className="w-full lg:w-91 h-auto lg:h-[480px] mt-8 bg-white rounded-[20px] shadow-[12px_12px_12px_0px_rgba(0,0,0,0.25)] p-5 flex flex-col justify-between">
             <img
               className="w-full lg:w-80 h-48 md:h-56 rounded-[5px] shadow-[4px_4px_10px_1px_rgba(0,0,0,0.25)] object-cover"
               src={Peace}
@@ -38,12 +38,14 @@ function Projects() {
               </p>
             </div>
             <div className="p-2">
-              <a href="https://github.com/angelo-Cahetel"><img src={GitHub} alt="GitHub Logo" /></a>
+              <a href="https://github.com/angelo-Cahetel">
+                <img src={GitHub} alt="GitHub Logo" />
+              </a>
             </div>
           </div>
 
           {/* poliverso */}
-          <div className="w-full lg:w-91 h-auto lg:h-[480px] mt-8 bg-white rounded-[20px] shadow-[12px_12px_12px_0px_rgba(0,0,0,0.25)] p-5">
+          <div className="w-full lg:w-91 h-auto lg:h-[480px] mt-8 bg-white rounded-[20px] shadow-[12px_12px_12px_0px_rgba(0,0,0,0.25)] p-5 flex flex-col justify-between">
             <img
               className="w-full lg:w-80 h-48 md:h-56 rounded-[5px] shadow-[4px_4px_10px_1px_rgba(0,0,0,0.25)] object-cover"
               src={Poliverso}
@@ -62,12 +64,14 @@ function Projects() {
               </p>
             </div>
             <div className="p-2">
-              <a href="https://github.com/angelo-Cahetel/PoliversoFilms"><img src={GitHub} alt="GitHub Logo" /></a>
+              <a href="https://github.com/angelo-Cahetel/PoliversoFilms">
+                <img src={GitHub} alt="GitHub Logo" />
+              </a>
             </div>
           </div>
 
           {/* outro projeto */}
-          <div className="w-full lg:w-91 h-auto lg:h-[480px] mt-8 bg-white rounded-[20px] shadow-[12px_12px_12px_0px_rgba(0,0,0,0.25)] p-5">
+          <div className="w-full lg:w-91 h-auto lg:h-[480px] mt-8 bg-white rounded-[20px] shadow-[12px_12px_12px_0px_rgba(0,0,0,0.25)] p-5 flex flex-col justify-between">
             <img
               className="w-full lg:w-80 h-48 md:h-56 rounded-[5px] shadow-[4px_4px_10px_1px_rgba(0,0,0,0.25)] object-cover"
               src={Tabnews}
@@ -87,7 +91,9 @@ function Projects() {
               </p>
             </div>
             <div className="p-2">
-              <a href="https://github.com/angelo-Cahetel/clone-tabnews"><img src={GitHub} alt="GitHub Logo" /></a>
+              <a href="https://github.com/angelo-Cahetel/clone-tabnews">
+                <img src={GitHub} alt="GitHub Logo" />
+              </a>
             </div>
           </div>
         </div>
