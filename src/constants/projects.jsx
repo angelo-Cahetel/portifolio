@@ -2,6 +2,7 @@ import React from "react";
 import Peace from "../assets/img/peace_project.jpg";
 import Poliverso from "../assets/img/poliverso.jpg";
 import Tabnews from "../assets/img/tabnews.jpg";
+import GitHub from "../assets/img/GitHub.svg";
 
 function Projects() {
   return (
@@ -36,6 +37,9 @@ function Projects() {
                 their routine in a practical way.
               </p>
             </div>
+            <div className="p-2">
+              <a href="https://github.com/angelo-Cahetel"><img src={GitHub} alt="GitHub Logo" /></a>
+            </div>
           </div>
 
           {/* poliverso */}
@@ -56,6 +60,9 @@ function Projects() {
                 Poliverso is an audiovisual agency that connects talents to
                 produce high-quality content.
               </p>
+            </div>
+            <div className="p-2">
+              <a href="https://github.com/angelo-Cahetel/PoliversoFilms"><img src={GitHub} alt="GitHub Logo" /></a>
             </div>
           </div>
 
@@ -78,6 +85,9 @@ function Projects() {
                 curso.dev course. In it, I learned how to create automated
                 tests, user authentication, and deployment.
               </p>
+            </div>
+            <div className="p-2">
+              <a href="https://github.com/angelo-Cahetel/clone-tabnews"><img src={GitHub} alt="GitHub Logo" /></a>
             </div>
           </div>
         </div>
