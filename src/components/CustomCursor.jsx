@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from "react";
-import cursor from "../assets/img/cursor.svg";
+import React, { useState, useEffect, useRef } from "react";
+import gsap from "gsap";
+import cursorIcon from "../assets/img/Cursor.svg";
 
 const CustomCursor = () => {
-  const [position, setPosition] = useState({ x: 0, y: 0 });
+  const cursorRef = useRef(null);
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
@@ -10,24 +11,43 @@ const CustomCursor = () => {
     const checkMobile = () => {
       setIsMobile(
         /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
-          navigator.userAgent,
-        ) || window.innerWidth < 768,
+          navigator.userAgent
+        ) || window.innerWidth < 768
       );
     };
 
     checkMobile();
     window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
+
+  useEffect(() => {
+    if (isMobile || !cursorRef.current) return;
+
+    // Configura o ponto de pivô para o centro do elemento
+    gsap.set(cursorRef.current, { xPercent: -50, yPercent: -50 });
+
+    // quickTo é otimizado para atualizações frequentes como movimento do mouse
+    const xTo = gsap.quickTo(cursorRef.current, "x", {
+      duration: 0.2,
+      ease: "power3",
+    });
+    const yTo = gsap.quickTo(cursorRef.current, "y", {
+      duration: 0.2,
+      ease: "power3",
+    });
 
     const handleMouseMove = (e) => {
-      setPosition({ x: e.clientX, y: e.clientY });
+      xTo(e.clientX);
+      yTo(e.clientY);
     };
+
     window.addEventListener("mousemove", handleMouseMove);
 
     return () => {
       window.removeEventListener("mousemove", handleMouseMove);
-      window.removeEventListener("resize", checkMobile);
     };
-  }, []);
+  }, [isMobile]);
 
   // Não renderiza o cursor personalizado em dispositivos móveis
   if (isMobile) {
@@ -36,19 +56,12 @@ const CustomCursor = () => {
 
   return (
     <div
-      className="fixed pointer-events-none"
-      style={{
-        left: position.x,
-        top: position.y,
-        transform: "translate(-50%, -50%)",
-        width: 80,
-        height: 80,
-        zIndex: 99999,
-      }}
+      ref={cursorRef}
+      className="fixed top-0 left-0 pointer-events-none w-20 h-20 z-[99999]"
     >
       <img
-        src={cursor}
-        alt="Imagem que segue o cursor"
+        src={cursorIcon}
+        alt="Cursor personalizado"
         className="w-full h-full"
       />
     </div>

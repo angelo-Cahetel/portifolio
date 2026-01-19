@@ -1,5 +1,5 @@
 import { BrowserRouter } from "react-router-dom";
-import { Header, Contact, Projects, Hero } from "./constants";
+import { Header, Contact, Projects, Hero } from "./sections";
 import CustomCursor from "./components/CustomCursor.jsx";
 
 const App = () => {
