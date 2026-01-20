@@ -12,3 +12,37 @@ export const SKILLS = [
   { label: "Banco de Dados", stack: "SQL, NoSQL (MongoDB)" },
   { label: "Outros", stack: "Git, GitHub, pacote office" },
 ];
+
+import Peace from "../assets/img/peace_project.jpg";
+import Poliverso from "../assets/img/poliverso.jpg";
+import Tabnews from "../assets/img/tabnews.jpg";
+
+export const PROJECTS = [
+  {
+    id: 1,
+    title: "peace",
+    image: Peace,
+    tag: "#Mobile",
+    description:
+      "Peace is an iOS app that was developed with the goal of helping people get better organized, managing their tasks and tracking their routine in a practical way.",
+    githubLink: "https://github.com/angelo-Cahetel",
+  },
+  {
+    id: 2,
+    title: "poliverso",
+    image: Poliverso,
+    tag: "#Web",
+    description:
+      "Poliverso is an audiovisual agency that connects talents to produce high-quality content.",
+    githubLink: "https://github.com/angelo-Cahetel/PoliversoFilms",
+  },
+  {
+    id: 3,
+    title: "clone-tabnews",
+    image: Tabnews,
+    tag: "#FullStack",
+    description:
+      "The tabnews clone is a project that was developed in the curso.dev course. In it, I learned how to create automated tests, user authentication, and deployment.",
+    githubLink: "https://github.com/angelo-Cahetel/clone-tabnews",
+  },
+];
