@@ -26,7 +26,7 @@ const MovingBlur = () => {
 
   return (
     <div
-      className="w-[200px] h-[180px] rotate-[227.58deg] bg-[#0000ff] blur-[100px]"
+      className="w-50 h-45 rotate-[227.58deg] bg-[#0000ff] blur-[100px]"
       style={{
         left: position.x,
         top: position.y,
