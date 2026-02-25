@@ -34,7 +34,7 @@ export const PROJECTS = [
     tag: "#Web",
     description:
       "Poliverso is an audiovisual agency that connects talents to produce high-quality content.",
-    githubLink: "https://github.com/angelo-Cahetel/PoliversoFilms",
+    githubLink: "https://github.com/angelo-Cahetel/",
   },
   {
     id: 3,
