@@ -18,7 +18,7 @@ const ProjectCard = ({ title, image, tag, description, githubLink }) => {
         </div>
         <p className="font-satoshi text-sm md:text-base">{description}</p>
       </div>
-      <div className="p-2">
+      <div className="p-2 flex justify-end">
         <a href={githubLink} target="_blank" rel="noopener noreferrer">
           <img src={GitHub} alt="GitHub Logo" />
         </a>
