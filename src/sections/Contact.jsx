@@ -1,4 +1,3 @@
-import React from "react";
 import GitHub from "../assets/img/GitHub.svg";
 import LinkedIn from "../assets/img/LinkedIn.svg";
 import Instagram from "../assets/img/Instagram.svg";
@@ -15,7 +14,7 @@ function Contact() {
         <div className="flex w-[full] min-h-screen p-6 sticky">
           <div className="flex justify-center bg-white rounded-2xl w-full p-20">
             <div className="flex flex-col justify-center">
-              <div className="m-48 lg:m-[200px] gap-2.5">
+              <div className="m-48 lg:m-50 gap-2.5">
                 <div className="flex flex-col justify-center items-center gap-3.5 lg:gap-0">
                   <h1 className="text-[#0000ff] text-6xl lg:text-9xl font-medium font-instrument italic whitespace-nowrap">
                     Let's talk!
