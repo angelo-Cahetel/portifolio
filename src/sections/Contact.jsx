@@ -16,12 +16,12 @@ function Contact() {
             <div className="flex flex-col justify-center">
               <div className="m-48 lg:m-50 gap-2.5">
                 <div className="flex flex-col justify-center items-center gap-3.5 lg:gap-0">
-                  <h1 className="text-[#0000ff] text-6xl lg:text-9xl font-medium font-instrument italic whitespace-nowrap">
+                  <h1 className="text-royalBlue  text-6xl lg:text-9xl font-medium font-instrument italic whitespace-nowrap">
                     Let's talk!
                   </h1>
                   <button
                     onClick={handleSendEmail}
-                    className="p-2 lg:px-7 lg:py-2.5 bg-[#0000ff] hover:text-[#0000ff] hover:bg-white hover:outline-2 hover:outline-[#0000ff] rounded-[20px] text-white lg:text-3xl text-xl cursor-pointer font-satoshi"
+                    className="p-2 lg:px-7 lg:py-2.5 bg-royalBlue  hover:text-royalBlue  hover:bg-white hover:outline-2 hover:outline-royalBlue  rounded-[20px] text-white lg:text-3xl text-xl cursor-pointer font-satoshi"
                   >
                     Get in touch
                   </button>

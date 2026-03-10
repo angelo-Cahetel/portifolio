@@ -35,10 +35,10 @@ function Header() {
         <div className="bg-white rounded-2xl flex flex-col justify-between w-full px-8 py-6 lg:p-20">
           <div className="flex justify-between gap-2">
             <div>
-              <h1 className="text-[#0000FF] text-4xl lg:text-8xl sm:text-4xl md:text-6xl uppercase font-instrument italic font-medium">
+              <h1 className="text-royalBlue  text-4xl lg:text-8xl sm:text-4xl md:text-6xl uppercase font-instrument italic font-medium">
                 <span class="text">software</span>
               </h1>
-              <h1 className="text-[#0000FF] text-4xl lg:text-8xl sm:text-4xl md:text-6xl uppercase font-instrument italic font-medium">
+              <h1 className="text-royalBlue text-4xl lg:text-8xl sm:text-4xl md:text-6xl uppercase font-instrument italic font-medium">
                 <span class="text">developer</span>
               </h1>
             </div>
@@ -50,17 +50,17 @@ function Header() {
 
           <div className="flex justify-between items-end">
             <div className="lg:flex gap-7">
-              <ul className="text-[16px] lg:text-2xl text-[#0000ff] hover:underline transition-all">
+              <ul className="text-[16px] lg:text-2xl text-royalBlue  hover:underline transition-all">
                 <a className="cursor-pointer font-satoshi" href="#about">
                   <span class="text">About</span>
                 </a>
               </ul>
-              <ul className="text-[16px] lg:text-2xl text-[#0000ff] hover:underline transition-all">
+              <ul className="text-[16px] lg:text-2xl text-royalBlue  hover:underline transition-all">
                 <a className="cursor-pointer font-satoshi" href="#projects">
                   <span class="text">Projects</span>
                 </a>
               </ul>
-              <ul className="text-[16px] lg:text-2xl text-[#0000ff] hover:underline transition-all">
+              <ul className="text-[16px] lg:text-2xl text-royalBlue  hover:underline transition-all">
                 <a className="cursor-pointer font-satoshi" href="#contact">
                   <span class="text">Contact</span>
                 </a>
@@ -68,10 +68,10 @@ function Header() {
             </div>
 
             <div>
-              <h1 className="text-[#0000FF] text-4xl lg:text-8xl uppercase font-medium font-instrument italic">
+              <h1 className="text-royalBlue  text-4xl lg:text-8xl uppercase font-medium font-instrument italic">
                 <span class="text">Angelo</span>
               </h1>
-              <h1 className="text-[#0000FF] text-4xl lg:text-8xl uppercase font-medium font-instrument italic">
+              <h1 className="text-royalBlue  text-4xl lg:text-8xl uppercase font-medium font-instrument italic">
                 <span class="text">Mendes</span>
               </h1>
             </div>

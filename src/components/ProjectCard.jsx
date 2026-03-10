@@ -7,10 +7,10 @@ const ProjectCard = ({ title, image, tag, description }) => {
         alt={`${title} Project`}
       />
       <div className="mt-4">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl text-[#0000ff] font-instrument italic">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl text-royalBlue font-instrument italic">
           {title}
         </h2>
-        <div className="my-2 rounded-[5px] w-min px-2.5 bg-[#0000ff]">
+        <div className="my-2 rounded-[5px] w-min px-2.5 bg-royalBlue">
           <p className="font-satoshi text-white text-sm">{tag}</p>
         </div>
         <p className="font-satoshi text-sm md:text-base">{description}</p>

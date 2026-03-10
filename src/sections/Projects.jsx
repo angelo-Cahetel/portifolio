@@ -33,7 +33,7 @@ function Projects() {
     >
       <div className="bg-white rounded-2xl flex flex-col w-full p-6 md:p-12 lg:p-20">
         <div className="justify-center">
-          <h1 className="text-[#0000FF] text-end text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-medium font-instrument italic">
+          <h1 className="text-royalBlue text-end text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-medium font-instrument italic">
             Projects
           </h1>
         </div>
@@ -53,8 +53,8 @@ function Projects() {
                       "noonpener,noreferrer",
                     )
                   }
-                  className={`w-full text-left text-3xl md:text-5xl lg:text-8xl font-instrument italic transition-colors border-4 border-grayBlue hover:border-[#0000FF] py-2 px-8 rounded-2xl ${hoveredProject?.id === project.id
-                      ? "text-[#0000ff]"
+                  className={`w-full text-left text-3xl md:text-5xl lg:text-8xl font-instrument italic transition-colors transition-discrete duration-300 border-4 border-grayBlue hover:border-royalBlue py-2 px-8 rounded-2xl ${hoveredProject?.id === project.id
+                      ? "text-royalBlue "
                       : "text-grayBlue"
                     }`}
                 >
