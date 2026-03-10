@@ -27,27 +27,27 @@ function Contact() {
                   </button>
                 </div>
               </div>
-              <div className="flex justify-center items-center gap-4">
+              <div className="flex justify-center items-center space-x-4">
                 <a
                   className="cursor-pointer"
                   href="https://github.com/angelo-Cahetel"
                   target="_blank"
                 >
-                  <img className="hover:w-7 hover:h-7" src={GitHub} alt="" />
+                  <img className="w-7 h-7" src={GitHub} alt="" />
                 </a>
                 <a
                   className="cursor-pointer"
                   href="https://www.linkedin.com/in/angelocahetel/"
                   target="_blank"
                 >
-                  <img className="hover:w-7 hover:h-7" src={LinkedIn} alt="" />
+                  <img className="w-7 h-7" src={LinkedIn} alt="" />
                 </a>
                 <a
                   className="cursor-pointer"
                   href="https://www.instagram.com/angelo_m_souza/"
                   target="_blank"
                 >
-                  <img className="hover:w-7 hover:h-7" src={Instagram} alt="" />
+                  <img className="w-7 h-7" src={Instagram} alt="" />
                 </a>
               </div>
             </div>
