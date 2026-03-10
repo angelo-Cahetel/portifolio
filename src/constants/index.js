@@ -16,11 +16,12 @@ export const SKILLS = [
 import Peace from "../assets/img/peace_project.jpg";
 import Poliverso from "../assets/img/poliverso.jpg";
 import Tabnews from "../assets/img/tabnews.jpg";
+import DevPulse from "../assets/img/DevPulse.jpg";
 
 export const PROJECTS = [
   {
     id: 1,
-    title: "peace",
+    title: "Peace",
     image: Peace,
     tag: "#Mobile",
     description:
@@ -29,12 +30,12 @@ export const PROJECTS = [
   },
   {
     id: 2,
-    title: "poliverso",
+    title: "Poliverso",
     image: Poliverso,
     tag: "#Web",
     description:
       "Poliverso is an audiovisual agency that connects talents to produce high-quality content.",
-    githubLink: "https://github.com/angelo-Cahetel/",
+    githubLink: "https://poliversofilms.com/",
   },
   {
     id: 3,
@@ -44,5 +45,14 @@ export const PROJECTS = [
     description:
       "The tabnews clone is a project that was developed in the curso.dev course. In it, I learned how to create automated tests, user authentication, and deployment.",
     githubLink: "https://github.com/angelo-Cahetel/clone-tabnews",
+  },
+  {
+    id: 4,
+    title: "DevPulse",
+    image: DevPulse,
+    tag: "#FullStack",
+    description:
+      "DevPulse is a modern B2B SaaS platform designed to monitor the structural and financial health of software projects.",
+    githubLink: "https://github.com/angelo-Cahetel/DevPulse",
   },
 ];

@@ -1,18 +1,20 @@
 import React, { useState, useEffect, useRef } from "react";
 import gsap from "gsap";
 import cursorIcon from "../assets/img/Cursor.svg";
+import pointer from "../assets/img/pointer.svg";
 
 const CustomCursor = () => {
   const cursorRef = useRef(null);
   const [isMobile, setIsMobile] = useState(false);
+  const [isPointer, setIsPointer] = useState(false);
 
   useEffect(() => {
     // Detecta se é dispositivo móvel
     const checkMobile = () => {
       setIsMobile(
         /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
-          navigator.userAgent
-        ) || window.innerWidth < 768
+          navigator.userAgent,
+        ) || window.innerWidth < 768,
       );
     };
 
@@ -40,6 +42,17 @@ const CustomCursor = () => {
     const handleMouseMove = (e) => {
       xTo(e.clientX);
       yTo(e.clientY);
+
+      const target = e.target;
+      const isInteractive =
+        target instanceof Element &&
+        Boolean(
+          target.closest(
+            "a, button, [role='button'], input[type='button'], input[type='submit'], .cursor-pointer",
+          ),
+        );
+
+      setIsPointer((prev) => (prev === isInteractive ? prev : isInteractive));
     };
 
     window.addEventListener("mousemove", handleMouseMove);
@@ -60,7 +73,7 @@ const CustomCursor = () => {
       className="fixed top-0 left-0 pointer-events-none w-20 h-20 z-[99999]"
     >
       <img
-        src={cursorIcon}
+        src={isPointer ? pointer : cursorIcon}
         alt="Cursor personalizado"
         className="w-full h-full"
       />

@@ -1,8 +1,31 @@
-import React from "react";
+import { useState } from "react";
 import { PROJECTS } from "../constants";
 import ProjectCard from "../components/ProjectCard";
 
 function Projects() {
+  const [hoveredProject, setHoveredProject] = useState(null);
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+
+  const updateMousePosition = (event) => {
+    setMousePosition({
+      x: event.clientX + 24,
+      y: Math.max(16, event.clientY - 260),
+    });
+  };
+
+  const handleMouseEnter = (project) => (event) => {
+    setHoveredProject(project);
+    updateMousePosition(event);
+  };
+
+  const handleMouseMove = (event) => {
+    updateMousePosition(event);
+  };
+
+  const handleMouseLeave = () => {
+    setHoveredProject(null);
+  };
+
   return (
     <section
       id="projects"
@@ -10,15 +33,48 @@ function Projects() {
     >
       <div className="bg-white rounded-2xl flex flex-col w-full p-6 md:p-12 lg:p-20">
         <div className="justify-center">
-          <h1 className="text-[#0000FF] text-end text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-medium font-instrument italic">
+          <h1 className="text-royalBlue text-end text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-medium font-instrument italic">
             Projects
           </h1>
         </div>
-        <div className="flex flex-col lg:flex-row gap-6 md:gap-8 lg:gap-11.25">
-          {PROJECTS.map((project) => (
-            <ProjectCard key={project.id} {...project} />
-          ))}
+        <div className="mt-5">
+          <ul className="space-y-7">
+            {PROJECTS.map((project) => (
+              <li key={project.id}>
+                <button
+                  type="button"
+                  onMouseEnter={handleMouseEnter(project)}
+                  onMouseMove={handleMouseMove}
+                  onMouseLeave={handleMouseLeave}
+                  onClick={() =>
+                    window.open(
+                      project.githubLink,
+                      "_blank",
+                      "noonpener,noreferrer",
+                    )
+                  }
+                  className={`w-full text-left text-3xl md:text-5xl lg:text-8xl font-instrument italic transition-colors transition-discrete duration-300 border-4 border-grayBlue hover:border-royalBlue py-2 px-8 rounded-2xl ${hoveredProject?.id === project.id
+                      ? "text-royalBlue "
+                      : "text-grayBlue"
+                    }`}
+                >
+                  {project.title}
+                </button>
+              </li>
+            ))}
+          </ul>
         </div>
+
+        {hoveredProject ? (
+          <div
+            className="hidden lg:block fixed z-50 pointer-events-none"
+            style={{ left: mousePosition.x, top: mousePosition.y }}
+          >
+            <div className="w-90">
+              <ProjectCard {...hoveredProject} />
+            </div>
+          </div>
+        ) : null}
       </div>
     </section>
   );
