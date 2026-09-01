@@ -17,10 +17,19 @@ import Peace from "../assets/img/peace_project.jpg";
 import Poliverso from "../assets/img/poliverso.jpg";
 import Tabnews from "../assets/img/tabnews.jpg";
 import DevPulse from "../assets/img/DevPulse.jpg";
+import BaseRntrc from "../assets/img/base-rntrc.png";
 
 export const PROJECTS = [
   {
     id: 1,
+    title: "Base RNTRC",
+    image: BaseRntrc,
+    tag: "#Web",
+    description:
+      "Base RNTRC é um website para facilitar a vida dos caminhoreios que precisam solicitar ou resolver pendencias da sua ANTT de forma automatizada e ágil.",
+  },
+  {
+    id: 2,
     title: "Peace",
     image: Peace,
     tag: "#Mobile",
@@ -29,7 +38,7 @@ export const PROJECTS = [
     githubLink: "https://github.com/angelo-Cahetel",
   },
   {
-    id: 2,
+    id: 3,
     title: "Poliverso",
     image: Poliverso,
     tag: "#Web",
@@ -38,7 +47,7 @@ export const PROJECTS = [
     githubLink: "https://poliversofilms.com/",
   },
   {
-    id: 3,
+    id: 4,
     title: "clone-tabnews",
     image: Tabnews,
     tag: "#FullStack",
@@ -47,7 +56,7 @@ export const PROJECTS = [
     githubLink: "https://github.com/angelo-Cahetel/clone-tabnews",
   },
   {
-    id: 4,
+    id: 5,
     title: "DevPulse",
     image: DevPulse,
     tag: "#FullStack",
