@@ -26,7 +26,7 @@ export const PROJECTS = [
     image: BaseRntrc,
     tag: "#Web",
     description:
-      "Base RNTRC é um website para facilitar a vida dos caminhoreios que precisam solicitar ou resolver pendencias da sua ANTT de forma automatizada e ágil.",
+      "Base RNTRC is a platform designed to make truck drivers’ lives easier by enabling them to request services and resolve issues with ANTT quickly, efficiently, and through automation",
   },
   {
     id: 2,
